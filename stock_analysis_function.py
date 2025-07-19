@@ -150,6 +150,13 @@ with st.container():
     legend_title='Legend',
     hovermode='x unified',  # better hover info on x axis
     template='plotly_white' # clean white background
+    legend=dict(
+        orientation='h',       # horizontal layout
+        x=0.5,                 # center of the plot horizontally
+        y=-0.2,                # push it below the x-axis
+        xanchor='center',
+        yanchor='top'
+    )
     )
 
 
