@@ -238,7 +238,7 @@ with st.container():
     y=-0.2,                # push it below the x-axis
     xanchor='center',
     yanchor='top'
-    )
+    ))
 
     #Volatility calculation
 
