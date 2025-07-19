@@ -278,8 +278,15 @@ with st.container():
     yaxis_title='Annualised Log Volatility',
     legend_title='Legend',
     template='plotly_white',
-    hovermode='x unified'
-    )
+    hovermode='x unified',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
+    
 
     #calculating annualised rolling sharpe ratio
 
@@ -318,8 +325,14 @@ with st.container():
     yaxis_title='Annualised Sharpe Ratio',
     legend_title='Legend',
     template='plotly_white',
-    hovermode='x unified'
-    )
+    hovermode='x unified',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
 
 
     #creating a subplot for the 2nd window
@@ -356,8 +369,15 @@ with st.container():
     yaxis_title='cumulative Return (%)',
     legend_title='Legend',
     template='plotly_white',
-    hovermode='x unified'
-    )
+    hovermode='x unified',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
+    
 
     #cumulative return if invested 1000£
 
@@ -396,8 +416,15 @@ with st.container():
     yaxis=dict(tickprefix='£', separatethousands=True),
     legend_title='Legend',
     hovermode='x unified',
-    template='plotly_white'
-    )
+    template='plotly_white',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
+    
 
     #Drawdown and Max Drawdown calculation
 
@@ -442,8 +469,15 @@ with st.container():
     yaxis_title='Drawdown',
     legend_title='Legend',
     hovermode='x unified',
-    template='plotly_white'
-    )
+    template='plotly_white',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
+    
 
     #calculating rolling correlation of the 2 stocks
 
@@ -467,8 +501,15 @@ with st.container():
     yaxis=dict(range=[-1.2, 1.2]),
     legend_title='Legend',
     hovermode='x unified',
-    template='plotly_white'
-    )
+    template='plotly_white',
+    legend=dict(
+    orientation='h',       # horizontal layout
+    x=0.5,                 # center of the plot horizontally
+    y=-0.2,                # push it below the x-axis
+    xanchor='center',
+    yanchor='top'
+    ))
+    
     
     #chooseing plot to be shown
     chart_options = ["Closing Prices", "Yearly returns (%)", "Rolling Volatility", "Sharpe Ratio", "Cumulative Return", "What if I invested £1000", "Drawdown", "Rolling Correlation"]
