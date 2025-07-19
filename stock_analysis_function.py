@@ -232,6 +232,12 @@ with st.container():
     barmode='group',
     template='plotly_white',
     legend_title_text='Stocks & Averages'
+        legend=dict(
+        orientation='h',       # horizontal layout
+        x=0.5,                 # center of the plot horizontally
+        y=-0.2,                # push it below the x-axis
+        xanchor='center',
+        yanchor='top'
     )
 
     #Volatility calculation
